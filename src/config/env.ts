@@ -7,6 +7,7 @@ dotenv.config();
 const envSchema = z.object({
   PORT: z.string().default('3000').transform((val) => parseInt(val, 10)),
   NODE_ENV: z.enum(['development', 'production', 'test']).default('development'),
+  DATA_SOURCE: z.enum(['mock', 'postgres']).default('mock'),
 });
 
 const parseEnv = () => {
