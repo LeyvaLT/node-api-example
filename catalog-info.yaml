@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Template
+metadata:
+  name: standard-service-template
+  title: Standard Service Template
+  description: A template to scaffold new services.
+spec:
+  type: service
+  owner: platform-engineering
