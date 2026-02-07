@@ -3,6 +3,8 @@ kind: Component
 metadata:
   name: ${{ values.name }}
   description: ${{ values.description }}
+  annotations:
+    backstage.io/kubernetes-id: ${{ values.name }}
 spec:
   type: service
   lifecycle: experimental
